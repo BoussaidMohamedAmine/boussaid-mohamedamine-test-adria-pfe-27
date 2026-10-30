@@ -2,6 +2,7 @@ package com.app.accountservice.service;
 
 import com.app.accountservice.entity.Account;
 import com.app.accountservice.repository.AccountRepository;
+import org.springframework.ai.mcp.annotation.McpTool;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +17,7 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
+    @McpTool(description = "Get All accounts")
     public List<Account> getAccounts() {
         return accountRepository.findAll();
     }

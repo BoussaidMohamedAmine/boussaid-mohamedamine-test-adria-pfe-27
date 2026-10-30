@@ -6,6 +6,7 @@ import com.app.transactionservice.model.Account;
 import com.app.transactionservice.model.Status;
 import com.app.transactionservice.repository.TransactionRepository;
 import jakarta.transaction.Transactional;
+import org.springframework.ai.mcp.annotation.McpTool;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -49,6 +50,7 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     @Override
+    @McpTool(description = "Get All transaction")
     public List<Transaction> getAllTransactions() {
         return transactionRepository.findAll();
     }

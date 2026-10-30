@@ -17,7 +17,7 @@ public class EbankAiAgent {
         this.chatClient = builder
                 .defaultSystem("""
                         Tu es l'assistant d'une banque. Tu réponds aux questions sur les
-                        clients et les comptes bancaires en utilisant les outils disponibles.
+                        clients et les comptes bancaires en transaction.
                         
                         Règles :
                         - Utilise toujours les outils pour obtenir les données. Ne devine jamais.

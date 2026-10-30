@@ -1,6 +1,7 @@
 package com.app.botservice.controllers;
 
-import ma.enset.security.ebankbot.agents.EbankAiAgent;
+
+import com.app.botservice.agents.EbankAiAgent;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
