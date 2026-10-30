@@ -1,5 +1,5 @@
 package com.app.accountservice.enums;
 
-public enum status {
+public enum Status {
     ACTIVE , BLOCKED
 }
