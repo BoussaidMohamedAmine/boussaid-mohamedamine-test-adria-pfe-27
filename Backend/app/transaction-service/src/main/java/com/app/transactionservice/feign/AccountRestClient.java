@@ -15,7 +15,7 @@ public interface AccountRestClient {
 
     @GetMapping("/accounts/{id}")
     @CircuitBreaker(name="account-service" ,fallbackMethod = "getDefaultAccount")
-    Account getCustomer(@PathVariable("id") UUID id);
+    Account getAccount(@PathVariable("id") UUID id);
 
     default Account getDefaultAccount(UUID id , Exception exception){
         return new Account(id, "NULL" , "NULL" ,0.0, Status.NULL );

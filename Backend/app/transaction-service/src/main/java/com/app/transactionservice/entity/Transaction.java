@@ -9,19 +9,20 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.Date;
 import java.util.UUID;
 
 @Entity
-@Data @AllArgsConstructor
-@NoArgsConstructor @Builder
+@Data @NoArgsConstructor @AllArgsConstructor
+@Builder
 public class Transaction {
     @Id
     private UUID id;
     private UUID accountId;
-    private BigDecimal amount;
+    private Integer amount;
     private String currency;
     //private String merchantCategory;
     private String country;
-    private Instant createdAt;
+    private Date createdAt;
 
 }
