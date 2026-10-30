@@ -20,7 +20,7 @@ public class Transaction {
     private UUID accountId;
     private BigDecimal amount;
     private String currency;
-    private String merchantCategory;
+    //private String merchantCategory;
     private String country;
     private Instant createdAt;
 
