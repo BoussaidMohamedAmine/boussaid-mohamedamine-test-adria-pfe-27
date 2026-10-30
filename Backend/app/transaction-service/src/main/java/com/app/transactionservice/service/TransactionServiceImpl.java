@@ -21,7 +21,7 @@ public class TransactionServiceImpl implements TransactionService {
     private TransactionRepository transactionRepository;
     private AccountRestClient accountRestClient;
 
-    public TransactionServiceImpl(TransactionRepository transactionRepository , AccountRestClient accountRestClient , Integer max_amount) {
+    public TransactionServiceImpl(TransactionRepository transactionRepository , AccountRestClient accountRestClient) {
         this.transactionRepository = transactionRepository;
         this.accountRestClient = accountRestClient;
     }

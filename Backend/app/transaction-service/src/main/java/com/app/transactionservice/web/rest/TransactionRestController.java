@@ -17,6 +17,10 @@ public class TransactionRestController {
 
     private TransactionService transactionService;
 
+    public TransactionRestController(TransactionService transactionService) {
+        this.transactionService = transactionService;
+    }
+
     @PostMapping("/transactions")
     public Transaction makeTransaction(@RequestBody Transaction transaction){
         return transactionService.makeTransaction(transaction);
